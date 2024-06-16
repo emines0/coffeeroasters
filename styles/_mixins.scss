@@ -1,0 +1,52 @@
+// Preset for body font
+@mixin body-font {
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: rem(12);
+  line-height: rem(15);
+  letter-spacing: 1;
+}
+
+// Navigation fonts presets
+@mixin nav-font {
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(24);
+}
+
+// Headings fonts presets
+@mixin heading-font {
+  font-family: $secondaryFont;
+  font-weight: 700;
+}
+
+@mixin title-font {
+  @include heading-font;
+  line-height: rem(150);
+  text-transform: lowercase;
+}
+
+@mixin h1-font {
+  @include heading-font;
+  font-size: rem(72);
+  line-height: rem(72);
+}
+
+@mixin h2-font {
+  @include heading-font;
+  font-size: rem(40);
+  line-height: rem(48);
+}
+
+@mixin h3-font {
+  @include heading-font;
+  font-size: rem(32);
+  line-height: rem(36);
+}
+
+@mixin h4-font {
+  @include heading-font;
+  font-size: rem(24);
+  line-height: rem(32);
+}
