@@ -1,0 +1,24 @@
+.btn {
+  padding: rem(20) rem(60);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  cursor: pointer;
+
+  &-primary {
+    background-color: $primaryColor;
+    color: $lightColor;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($primaryColor, 15%);
+    }
+  }
+
+  @include large {
+    padding: rem(15) rem(45);
+    font-size: 1rem;
+  }
+}

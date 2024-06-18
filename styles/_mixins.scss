@@ -50,3 +50,40 @@
   font-size: rem(24);
   line-height: rem(32);
 }
+
+// Flexbox
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-space-between-center {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Screen sizes
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
