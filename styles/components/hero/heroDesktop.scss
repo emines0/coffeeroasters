@@ -1,0 +1,45 @@
+// Media queries min width 1280px - desktop
+.hero {
+  @include desktop {
+    background-image: url('/images/home/desktop/image-hero-coffeepress.jpg');
+  }
+
+  .hero-content {
+    @include desktop {
+      h1 {
+        width: 50%;
+      }
+
+      p {
+        width: 35%;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-about {
+    @include desktop {
+      background-image: url('/images/about/desktop/image-hero-whitecup.jpg');
+    }
+    .hero-content {
+      @include desktop {
+        p {
+          width: 36%;
+        }
+      }
+    }
+  }
+
+  &-plan {
+    @include desktop {
+      background-image: url('/images/plan/desktop/image-hero-blackcup.jpg');
+    }
+    .hero-content {
+      @include desktop {
+        p {
+          width: 36%;
+        }
+      }
+    }
+  }
+}

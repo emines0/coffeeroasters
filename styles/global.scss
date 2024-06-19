@@ -70,7 +70,14 @@ img {
   display: none;
 }
 
-@import 'components/navigation';
-@import 'components/hero';
+@import 'components/navigation/navigation';
+@import 'components/navigation/navigationTablet';
+@import 'components/hero/hero';
+@import 'components/hero/heroTablet';
+@import 'components/hero/heroLarge';
+@import 'components/hero/heroDesktop';
 
-@import 'components/coffeeGrid';
+@import 'components/coffeeGrid/coffeeGrid';
+@import 'components/coffeeGrid/coffeeGridTablet';
+@import 'components/coffeeGrid/coffeeGridLarge';
+@import 'components/coffeeGrid/coffeeGridDesktop';

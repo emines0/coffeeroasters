@@ -1,0 +1,58 @@
+// Mediaquerries min width 768px - tablet
+.our-collection {
+  @include tablet {
+    text-align: left;
+    padding: rem(100) 0;
+  }
+
+  h2 {
+    @include tablet {
+      background: linear-gradient(
+        to bottom,
+        #83888f 6%,
+        #cecece 32%,
+        #fefcf7 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: rem(96);
+      position: absolute;
+      width: 100%;
+      height: 80px;
+      top: rem(50);
+      left: 0;
+      text-align: center;
+      z-index: -1;
+    }
+  }
+
+  .grid {
+    .grid-item {
+      @include tablet {
+        width: 100%;
+        @include flex(
+          $direction: row,
+          $justify: center,
+          $align: center,
+          $gap: 0
+        );
+
+        img {
+          width: 35%;
+        }
+      }
+
+      .text {
+        @include tablet {
+          width: 40%;
+          @include flex(
+            $direction: column,
+            $justify: flex-start,
+            $align: flex-start,
+            $gap: 20
+          );
+        }
+      }
+    }
+  }
+}

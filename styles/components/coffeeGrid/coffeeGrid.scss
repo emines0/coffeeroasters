@@ -1,0 +1,43 @@
+.our-collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: rem(80) 0;
+
+  h2 {
+    background: $fontBlackGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: rem(20);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: rem(40);
+    padding: 0 rem(20) rem(20) rem(20);
+    width: 100%;
+    background: transparent;
+  }
+  .grid-item {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    @include flex($gap: 20);
+
+    .text {
+      width: 100%;
+      @include flex($gap: 20);
+      p {
+        font-size: rem(15);
+        opacity: 0.6;
+      }
+    }
+  }
+}

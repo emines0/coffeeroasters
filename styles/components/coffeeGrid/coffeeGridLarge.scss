@@ -1,0 +1,25 @@
+// Mediaquerries min width 1024px - large
+.our-collection {
+  @include large {
+    padding: rem(120) 0;
+  }
+  h2 {
+    @include large {
+      font-size: rem(120);
+      top: rem(70);
+    }
+  }
+
+  .grid {
+    .grid-item {
+      .text {
+        @include large {
+          width: 30%;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

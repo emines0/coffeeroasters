@@ -1,0 +1,50 @@
+// Media queries min width 1024px - large
+.hero {
+  @include large {
+    background-image: url('/images/home/desktop/image-hero-coffeepress.jpg');
+    height: rem(650);
+  }
+
+  .hero-content {
+    @include large {
+      padding: 0 rem(60);
+      h1 {
+        width: 55%;
+      }
+
+      p {
+        width: 45%;
+        padding-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &-about {
+    @include large {
+      background-image: url('/images/about/desktop/image-hero-whitecup.jpg');
+      height: rem(450);
+    }
+
+    .hero-content {
+      @include large {
+        p {
+          width: 48%;
+        }
+      }
+    }
+  }
+  &-plan {
+    @include large {
+      background-image: url('/images/plan/tablet/image-hero-blackcup.jpg');
+      height: rem(450);
+    }
+
+    .hero-content {
+      @include large {
+        p {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

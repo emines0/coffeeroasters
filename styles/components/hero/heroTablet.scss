@@ -1,0 +1,55 @@
+// Media queries min width 768px - tablet
+.hero {
+  @include tablet {
+    background-image: url('/images/home/tablet/image-hero-coffeepress.jpg');
+  }
+
+  .hero-content {
+    @include tablet {
+      align-items: flex-start;
+      padding: 0 rem(50);
+    }
+
+    @include tablet {
+      h1 {
+        @include h1-font;
+        width: 65%;
+        padding-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      p {
+        width: 60%;
+        text-align: left;
+      }
+    }
+  }
+
+  &-about {
+    @include tablet {
+      background-image: url('/images/about/tablet/image-hero-whitecup.jpg');
+    }
+
+    .hero-content {
+      @include tablet {
+        p {
+          width: 65%;
+        }
+      }
+    }
+  }
+
+  &-plan {
+    @include tablet {
+      background-image: url('/images/plan/tablet/image-hero-blackcup.jpg');
+    }
+
+    .hero-content {
+      @include tablet {
+        p {
+          width: 65%;
+        }
+      }
+    }
+  }
+}

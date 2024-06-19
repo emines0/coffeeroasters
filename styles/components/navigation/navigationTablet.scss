@@ -1,0 +1,29 @@
+// Mediaqueris min width 768px - tablet
+nav.lg {
+  @include tablet {
+    padding: 30px 0;
+    @include flex-column;
+    @include flex-space-between-center;
+
+    .nav-right {
+      // display: none;
+
+      @include flex-space-between-center;
+    }
+
+    ul {
+      width: 100%;
+
+      @include flex-space-between-center;
+    }
+    a {
+      padding: 1rem;
+    }
+  }
+}
+
+nav.sm {
+  @include tablet {
+    display: none;
+  }
+}
