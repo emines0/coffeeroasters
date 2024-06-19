@@ -68,6 +68,14 @@
   align-items: center;
 }
 
+@mixin flex($direction: column, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: rem($gap);
+}
+
 // Screen sizes
 
 @mixin tablet {

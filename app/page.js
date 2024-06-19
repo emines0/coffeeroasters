@@ -1,3 +1,4 @@
+import CoffeeGrid from '@/components/CoffeeGrid';
 import Hero from '@/components/Hero';
 import Link from 'next/link';
 
@@ -12,6 +13,7 @@ export default function Home() {
             your door, at your schedule.'
         btnText='Create your plan'
       />
+      <CoffeeGrid />
     </main>
   );
 }

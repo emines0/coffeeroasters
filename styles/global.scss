@@ -55,6 +55,11 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -67,3 +72,5 @@ ul {
 
 @import 'components/navigation';
 @import 'components/hero';
+
+@import 'components/coffeeGrid';
