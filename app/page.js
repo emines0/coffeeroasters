@@ -1,6 +1,7 @@
-import CoffeeGrid from '@/components/CoffeeGrid';
+import CoffeeGrid from '@/components/Home/CoffeeGrid';
 import Hero from '@/components/Hero';
-import Link from 'next/link';
+import WhyChooseUs from '@/components/Home/WhyChooseUs';
+import ProgressBar from '@/components/ProgressBar';
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         btnText='Create your plan'
       />
       <CoffeeGrid />
+      <WhyChooseUs />
+      <ProgressBar theme='light' />
     </main>
   );
 }

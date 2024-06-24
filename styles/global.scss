@@ -61,9 +61,9 @@ img {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: rem(1280);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 rem(20);
 }
 
 .hidden {
@@ -81,3 +81,17 @@ img {
 @import 'components/coffeeGrid/coffeeGridTablet';
 @import 'components/coffeeGrid/coffeeGridLarge';
 @import 'components/coffeeGrid/coffeeGridDesktop';
+
+@import 'components/whyChooseUs/whyChooseUs';
+@import 'components/whyChooseUs/whyChooseUsTablet';
+@import 'components/whyChooseUs/whyChooseUsLarge';
+@import 'components/whyChooseUs/whyChooseUsDesktop';
+
+@import 'components/progressBar/progressBar';
+@import 'components/progressBar/progressBarTablet';
+@import 'components/progressBar/progressBarLarge';
+@import 'components/progressBar/progressBarDesktop';
+
+@import 'components/footer/footer';
+@import 'components/footer/footerTablet';
+@import 'components/footer/footerDesktop';

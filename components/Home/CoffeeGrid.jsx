@@ -10,7 +10,7 @@ const CoffeeGrid = () => {
       <h2>our collection</h2>
       <div className='grid'>
         <div className='grid-item'>
-          <Image src={granEspresso} width={0} height={0} />
+          <Image alt='Gran Espresso' src={granEspresso} width={0} height={0} />
           <div className='text'>
             <h4>Gran Espresso</h4>
             <p>
@@ -20,7 +20,7 @@ const CoffeeGrid = () => {
           </div>
         </div>
         <div className='grid-item'>
-          <Image src={planalto} width={0} height={0} />
+          <Image alt='Planalto' src={planalto} width={0} height={0} />
           <div className='text'>
             <h4>Planalto</h4>
             <p>
@@ -30,7 +30,7 @@ const CoffeeGrid = () => {
           </div>
         </div>
         <div className='grid-item'>
-          <Image src={piccollo} width={0} height={0} />
+          <Image alt='Piccollo' src={piccollo} width={0} height={0} />
           <div className='text'>
             <h4>Piccollo</h4>
             <p>
@@ -40,7 +40,7 @@ const CoffeeGrid = () => {
           </div>
         </div>
         <div className='grid-item'>
-          <Image src={danche} width={0} height={0} />
+          <Image alt='Danche' src={danche} width={0} height={0} />
           <div className='text'>
             <h4>Danche</h4>
             <p>

@@ -1,0 +1,32 @@
+// Mediaquerries for min width 1280px - desktop
+
+@include desktop {
+  .progress {
+    padding: 0 rem(60);
+    .progress-line {
+      width: 73%;
+    }
+
+    .progress-bar {
+      .progress-circle {
+        &:nth-child(3) {
+          margin-left: rem(170);
+        }
+        &:nth-child(4) {
+          margin-left: rem(100);
+        }
+        &:last-child {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .progress-steps {
+      .progress-step {
+        p {
+          padding: 0 rem(40) 0 0;
+        }
+      }
+    }
+  }
+}

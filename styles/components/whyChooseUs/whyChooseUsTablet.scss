@@ -1,0 +1,49 @@
+// Media querries min width 768px - tablet
+
+@include tablet {
+  .box {
+    height: rem(550);
+
+    .box-header {
+      @include flex($gap: 20);
+      padding: 0 rem(96);
+
+      h2 {
+        font-size: rem(32);
+        line-height: rem(48);
+      }
+    }
+
+    .box-content {
+      top: 45%;
+      @include flex($gap: 30);
+
+      .box-item {
+        height: rem(180);
+        padding: rem(50) rem(50);
+
+        @include flex(
+          $direction: row,
+          $justify: space-between,
+          $align: center,
+          $gap: 50
+        );
+
+        img {
+          padding-top: rem(0);
+          padding-bottom: rem(0);
+        }
+
+        .text {
+          @include flex($align: flex-start, $gap: 0);
+          text-align: left;
+
+          h3 {
+            font-size: rem(24);
+            line-height: rem(32);
+          }
+        }
+      }
+    }
+  }
+}

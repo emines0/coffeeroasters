@@ -15,7 +15,9 @@
     @include desktop {
       grid-template-columns: repeat(auto-fill, minmax(rem(250), 1fr));
       gap: rem(0);
+      padding-bottom: 0;
     }
+
     .grid-item {
       @include desktop {
         @include flex(
@@ -38,6 +40,11 @@
             $gap: 20
           );
           width: 70%;
+        }
+        p {
+          @include desktop {
+            line-height: rem(26);
+          }
         }
       }
     }

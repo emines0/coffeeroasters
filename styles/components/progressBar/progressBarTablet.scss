@@ -1,0 +1,75 @@
+// Mediaquerries for min width 768px - tablet
+
+@include tablet {
+  .progress {
+    margin-top: rem(400);
+    @include flex($align: flex-start, $gap: 40);
+    text-align: left;
+
+    .progress-line {
+      width: 65%;
+      height: 1px;
+      border: 1px solid $secondaryColor;
+      position: absolute;
+    }
+
+    .progress-bar {
+      @include flex(
+        $direction: row,
+        $justify: space-between,
+        $align: center,
+        $gap: 50
+      );
+      position: relative;
+      width: 100%;
+
+      .progress-circle {
+        width: rem(31);
+        height: rem(31);
+        border-radius: 50%;
+        border: 1px solid $primaryColor;
+        background: $lightColor;
+        z-index: 10;
+
+        &:last-child {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .progress-steps {
+      @include flex(
+        $direction: row,
+        $justify: center,
+        $align: center,
+        $gap: 40
+      );
+
+      .progress-step {
+        @include flex($justify: center, $align: flex-start, $gap: 30);
+
+        h1 {
+          color: $secondaryColor;
+          text-align: left;
+        }
+
+        h3 {
+          font-size: rem(28);
+          line-height: rem(32);
+          padding: 0 rem(70) 0 0;
+        }
+
+        p {
+          font-size: rem(15);
+          line-height: rem(25);
+          color: $darkColor;
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn {
+    margin-top: rem(20);
+  }
+}

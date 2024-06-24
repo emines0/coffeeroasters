@@ -1,0 +1,57 @@
+// Media querries min width 1024px - large
+
+@include desktop {
+  .box {
+    height: rem(570);
+
+    .box-header {
+      @include flex($gap: 40);
+      padding: 0 rem(340);
+
+      p {
+        font-size: rem(16);
+        line-height: rem(26);
+      }
+    }
+
+    .box-content {
+      top: 55%;
+
+      @include flex(
+        $direction: row,
+        $justify: space-between,
+        $align: center,
+        $gap: 50
+      );
+
+      .box-item {
+        height: rem(380);
+        padding: rem(20) rem(20);
+
+        @include flex(
+          $direction: column,
+          $justify: center,
+          $align: center,
+          $gap: 50
+        );
+
+        img {
+          padding-top: rem(50);
+          padding-bottom: rem(0);
+        }
+
+        .text {
+          @include flex($align: center, $gap: 30);
+          text-align: center;
+        }
+      }
+
+      .box-item:nth-child(3) {
+        img {
+          padding-top: rem(70);
+          padding-bottom: rem(0);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.box {
+  width: 100%;
+  height: rem(900);
+  background-color: $darkColor;
+  color: $lightColor;
+  padding: rem(60) rem(20) 0 rem(20);
+  position: relative;
+  text-align: center;
+  border-radius: rem(8);
+
+  .box-header {
+    @include flex($gap: 20);
+
+    h2 {
+      font-size: rem(28);
+      line-height: rem(28);
+    }
+
+    p {
+      font-size: rem(15);
+      line-height: rem(25);
+      opacity: 0.8;
+    }
+  }
+
+  .box-content {
+    position: absolute;
+    width: 80%;
+    top: 32%;
+    left: 10%;
+    @include flex($gap: 40);
+    margin: 0 auto;
+
+    .box-item {
+      @include flex($gap: 40);
+      width: 100%;
+      height: rem(380);
+      padding: rem(25);
+      border-radius: rem(8);
+      background-color: $primaryColor;
+      color: $lightColor;
+
+      img {
+        padding-top: rem(60);
+        padding-bottom: rem(40);
+      }
+
+      .text {
+        @include flex($gap: 40);
+        h3 {
+          font-size: rem(24);
+          line-height: rem(32);
+        }
+
+        p {
+          font-size: rem(15);
+          line-height: rem(25);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

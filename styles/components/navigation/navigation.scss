@@ -5,16 +5,16 @@ nav.lg {
 nav.sm {
   @include flex-space-between-center;
   position: relative;
-  padding: 20px 0;
+  padding: rem(20) 0;
 
   ul {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 95%;
+    left: -5%;
     @include flex-column;
     align-items: center;
     background-color: $lightColor;
-    width: 100%;
+    width: 110%;
     height: 100vh;
     z-index: 1;
     background: $menuBgGradient;

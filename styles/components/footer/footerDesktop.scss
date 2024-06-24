@@ -1,0 +1,33 @@
+@include desktop {
+  footer {
+    margin: rem(150) 0 rem(50) 0;
+    @include flex($direction: row, $justify: space-between, $gap: 10);
+    padding: rem(20) rem(40);
+
+    .logo {
+      padding: 0;
+      text-align: right;
+    }
+
+    ul {
+      @include flex($direction: row, $align: flex-start);
+      padding: 0;
+
+      li {
+        padding: rem(15);
+        a {
+          padding: rem(15);
+        }
+      }
+    }
+
+    .socials {
+      @include flex($direction: row, $justify: flex-end);
+      padding: 0;
+
+      a {
+        padding: rem(20);
+      }
+    }
+  }
+}

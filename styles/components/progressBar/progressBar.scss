@@ -1,0 +1,47 @@
+.progress {
+  margin-top: rem(700);
+  @include flex($gap: 70);
+  text-align: center;
+
+  h4 {
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $greyColor;
+  }
+
+  .progress-bar {
+    display: none;
+  }
+
+  .progress-steps {
+    @include flex($gap: 50);
+
+    .progress-step {
+      @include flex($gap: 30);
+
+      h1 {
+        color: $secondaryColor;
+      }
+
+      h3 {
+        font-size: rem(28);
+        line-height: rem(32);
+      }
+
+      p {
+        font-size: rem(15);
+        line-height: rem(25);
+        color: $darkColor;
+        padding: 0 rem(10);
+      }
+    }
+  }
+}
+
+.progress.light {
+  background-color: $lightColor;
+}
+
+.progress.dark {
+  background-color: $darkColor;
+}

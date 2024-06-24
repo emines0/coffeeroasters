@@ -1,0 +1,20 @@
+@include tablet {
+  footer {
+    margin: rem(150) 0 rem(100) 0;
+    @include flex($gap: 10);
+
+    ul {
+      @include flex($direction: row);
+      padding-bottom: rem(20);
+    }
+
+    .socials {
+      @include flex($direction: row);
+      padding: 0 0 rem(20) 0;
+
+      a {
+        padding: rem(20);
+      }
+    }
+  }
+}

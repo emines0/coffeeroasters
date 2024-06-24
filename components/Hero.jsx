@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 const HeroHome = ({ classes, heading, paragraph, btnText }) => {
   return (
@@ -7,7 +8,9 @@ const HeroHome = ({ classes, heading, paragraph, btnText }) => {
         <div className='hero-content'>
           <h1>{heading}</h1>
           <p>{paragraph}</p>
-          {btnText && <button className='btn btn-primary'>{btnText}</button>}
+          {btnText && (
+            <Button url='/create-plan' color='primary' text={btnText} />
+          )}
         </div>
       </div>
     </>
